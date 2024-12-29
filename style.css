@@ -15,7 +15,7 @@ body {
 .bg-img {
   width: 100%;
   height: 100vh;
-  background-image: url("background.png");
+  background-image: url("finalbackground.jpg");
   background-size: cover;
   background-position: center;
   transition: 1s;
@@ -90,6 +90,7 @@ nav ul li a:hover::after {
 
 span {
   margin-top: 10px;
+  color: #ff004f;
 }
 
 .row {
@@ -105,6 +106,7 @@ span {
 .about-col-1 img {
   width: 100%;
   border-radius: 15px;
+  margin-top: 25px;
 }
 
 .about-col-2 {
@@ -446,7 +448,7 @@ nav .fa-solid {
 /* For mobile and tablet screens */
 @media only screen and (max-width: 1024px) {
   .bg-img {
-    background-image: url("phone-background.png");
+    background-image: url("finalphonebackground\ copy.jpg");
     background-size: cover; /* Ensure the background covers the area */
     background-position: center;
   }
@@ -606,7 +608,7 @@ nav .fa-solid {
 @media only screen and (max-width: 600px) {
   /* Adjust background image */
   .bg-img {
-    background-image: url("phone-background.png");
+    background-image: url("finalphonebackground\ copy.jpg");
     background-size: cover;
     background-position: center;
   }
@@ -697,7 +699,7 @@ nav .fa-solid {
 }
 
 .popup-msg {
-  position:fixed;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -722,10 +724,9 @@ nav .fa-solid {
   margin: 0;
 }
 
-.popup-text{
+.popup-text {
   text-align: center;
   flex-basis: 100%;
-
 }
 
 .popup-msg.show {
@@ -752,6 +753,7 @@ nav .fa-solid {
     opacity: 1;
     transform: translate(-50%, -50%);
   }
+
   to {
     opacity: 0;
     transform: translate(-50%, -40%);
