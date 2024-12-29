@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="bg-img">
+      <div class="container">
+        <nav>
+          <img src="parth.png" class="logo" />
+          <ul id="pannel">
+            <!-- Updated ID to 'nav-links' -->
+            <li><a href="#bg-img">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text" >
+          <p>UI/UX Designer</p>
+          <h1>Hi, I am <span>Parth</span> <br />Shah From Gujarat</h1>
+        </div>
+      </div>
+    </div>
+
+    <!---------about-------------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="user.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub">About Me</h1>
+            <p class="light-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+              laborum quia architecto obcaecati laudantium consequuntur officia
+              est nemo placeat suscipit possimus dignissimos expedita omnis
+              neque quibusdam vero autem, numquam consequatur.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br />Designing Web interfaces</li>
+                <li><span>Web Development</span><br />Web app Development</li>
+                <li>
+                  <span>App Development</span><br />Building Android/iOS apps
+                </li>
+              </ul>
+            </div>
+            <!---Exp-->
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2024 - current</span><br />Currently No Experience Going
+                  On Shopify
+                </li>
+              </ul>
+            </div>
+            <!--Education--->
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2024 - current</span><br />Learning UI/UX Design and
+                  pursuing BCA in The Mandvi College
+                </li>
+                <li>
+                  <span>2023</span><br />Completed My HSC With 93 percentile in
+                  Commerce
+                </li>
+                <li><span>2021</span><br />Building Android/iOS apps</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---services-->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+
+            <p class="light-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+              distinctio minus illo doloribus numquam. Cumque rerum dolor amet
+              eaque, soluta dolorum. Ab hic dicta nemo sit mollitia esse eaque
+              fugit!
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop-simple"></i>
+            <h2>UI/UX Design Design</h2>
+
+            <p class="light-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+              distinctio minus illo doloribus numquam. Cumque rerum dolor amet
+              eaque, soluta dolorum. Ab hic dicta nemo sit mollitia esse eaque
+              fugit!
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Design</h2>
+
+            <p class="light-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+              distinctio minus illo doloribus numquam. Cumque rerum dolor amet
+              eaque, soluta dolorum. Ab hic dicta nemo sit mollitia esse eaque
+              fugit!
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!---portfolio----->
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="work-1.png" />
+            <div class="layer">
+              <h3>Social Media</h3>
+              <p class="light-text">
+                The app Connects you to the talented people around the
+                world.Download it from play store.
+              </p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="work-2.png" />
+            <div class="layer">
+              <h3>Music Media</h3>
+              <p class="light-text">
+                The app Connects you to the talented people around the
+                world.Download it from play store.
+              </p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="work-3.png" />
+            <div class="layer">
+              <h3>Online Shoping App</h3>
+              <p class="light-text">
+                The app Connects you to the talented people around the
+                world.Download it from play store.
+              </p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+    <!-------------------------Contact-->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>pparth8108@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>7878787565</p>
+            <div class="social-icons">
+              <a href="https://www.instagram.com/_paartth___/?__pwa=1#"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://www.instagram.com/_paartth___/?__pwa=1#"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://www.instagram.com/_paartth___/?__pwa=1#"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="https://www.instagram.com/_paartth___/?__pwa=1#"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+            <a href="my-cv.pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input
+                type="text"
+                class="input"
+                name="Name"
+                placeholder="Your Name"
+                required
+              />
+              <input
+                type="email"
+                class="input"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+                class="input"
+              ></textarea>
+              <button type="submit" class="btn btn3">Submit</button>
+            </form>
+            <div id="popup-msg" class="popup-msg">
+              <p id="popup-text"></p>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p class="light-text">Copyright © Parth <i class="fa-solid fa-heart"></i></p>
+      </div>
+    </div>
+
+    <!---- JavaScript file ---->
+    <script src="script.js"></script>
+  </body>
+</html>
