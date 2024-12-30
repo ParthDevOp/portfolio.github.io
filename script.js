@@ -80,3 +80,23 @@ form.addEventListener("submit", (e) => {
       }, 5000);
     });
 });
+
+
+
+
+
+window.addEventListener('load', function() {
+  // Wait for 3 seconds before starting the fade-out
+  setTimeout(function() {
+    var preloader = document.getElementById('preloader');
+    
+    // Add fade-out class to start the fade-out effect
+    preloader.style.transition = 'opacity 1s ease-out'; // Smooth transition for 1 second
+    preloader.style.opacity = '0'; // Fade out
+
+    // After 1 second, hide the preloader completely by setting display to none
+    setTimeout(function() {
+      preloader.style.display = 'none';
+    }, 1000); // Matches the duration of the fade-out (1 second)
+  }, 1000); // Preloader lasts for 3 seconds before starting to fade out
+});
