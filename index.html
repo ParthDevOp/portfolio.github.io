@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  </head>
+  <body>
+    <div id="preloader" class="spinner">
+    </div>
+    
+      </div>
+    </div>
+    </div>
+    <div class="bg-img">
+      <div class="container">
+        <nav>
+          <img src="parth.png" class="logo" />
+          <ul id="pannel">
+            <!-- Updated ID to 'nav-links' -->
+            <li><a href="#bg-img">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p><span>UI/UX</span> Designer</p>
+          <h1>Hi, I am <span>Parth</span> <br />Shah From <strong id="guj">Gujarat</strong></h1>
+        </div>
+      </div>
+    </div>
+
+    <!---------about-------------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="ParthAboutme.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub">About Me</h1>
+            <p class="light-text">
+              I’m <span>Parth Shah</span>, a second-year BCA student
+              specializing in web and app development. Skilled in HTML, CSS,
+              JavaScript, and React, I focus on creating responsive,
+              user-friendly websites. Passionate about problem-solving, I’m
+              always expanding my skills through freelance projects and
+              continuous learning.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Web Development</span><br />
+                  HTML, CSS, JavaScript, React
+                </li>
+                <li>
+                  <span>Programming Languages</span><br />
+                  Basic knowledge of C, C++, Java, Python
+                </li>
+                <li>
+                  <span>Tools</span><br />
+                  Git, VS Code, Webpack
+                </li>
+                <li>
+                  <span>Video Editing</span><br />
+                  Editing, post-production, and effects
+                </li>
+                <li>
+                  <span>App Development</span><br />
+                  Basic knowledge and exploration
+                </li>
+                <li>
+                  <span>Soft Skills</span><br />
+                  Problem-solving, Time management, Communication, Teamwork
+                </li>
+              </ul>
+            </div>
+            <!---Exp-->
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <ul>
+                    <li>
+                      <span>Freelance Web Developer</span><br />
+                      [Current – Ongoing]
+                    </li>
+                    <li>
+                      <span>Key Responsibilities:</span><br />
+                      <ul>
+                        <li>
+                          Designing and developing websites for clients,
+                          ensuring responsive and user-friendly designs.
+                        </li>
+                        <li>
+                          Collaborating with clients to understand their
+                          requirements and deliver tailored solutions.
+                        </li>
+                        <li>
+                          Managing multiple projects simultaneously while
+                          improving technical skills.
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <!--Education--->
+            <div class="tab-contents" id="education">
+              <ul>
+                <ul>
+                  <li>
+                    <span>Bachelor of Computer Applications (BCA)</span><br />
+                    The Mandvi College, 2024
+                  </li>
+                  <li>
+                    <span>12th Grade Commerce</span><br />
+                    The Mandvi Education Society, 2023 - Achieved 92 percentile
+                    in 12th grade
+                  </li>
+                </ul>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---services-->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+
+            <p class="light-text">
+              Welcome to my portfolio! I specialize in creating modern,
+              responsive, and user-friendly websites that are designed to
+              deliver a seamless experience across all devices. With a focus on
+              clean design and performance, I aim to bring your ideas to life
+              through innovative web development solutions. Explore my work and
+              see how I can help you create a digital presence that stands out.
+            </p>
+
+            <a>Learn More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop-simple"></i>
+            <h2>UI/UX Design Design</h2>
+
+            <p class="light-text">
+              I’m passionate about crafting intuitive and visually appealing
+              UI/UX designs that prioritize user experience. My goal is to
+              create designs that are not only aesthetically pleasing but also
+              functional and easy to navigate. By focusing on user-centered
+              design principles, I ensure that every interface I create is
+              optimized for usability and engagement. Explore my work to see how
+              thoughtful design can elevate user interactions.
+            </p>
+
+            <a >Learn More</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Design</h2>
+
+            <p class="light-text">
+              With a strong foundation in app development, I focus on creating
+              innovative and efficient mobile applications that provide seamless
+              user experiences. I work with modern technologies to build
+              intuitive apps for both Android and iOS platforms, ensuring they
+              are fast, responsive, and scalable. Whether it's designing the
+              user interface or implementing complex features, I strive to
+              deliver high-quality apps that meet the unique needs of each
+              client.
+            </p>
+
+            <a>Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!---portfolio----->
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="work-1.png" />
+            <div class="layer">
+              <h3>Social Media</h3>
+              <p class="light-text">
+                The app Connects you to the talented people around the
+                world.Download it from play store.
+              </p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="work-2.png" />
+            <div class="layer">
+              <h3>Music Media</h3>
+              <p class="light-text">
+                The app Connects you to the talented people around the
+                world.Download it from play store.
+              </p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="work-3.png" />
+            <div class="layer">
+              <h3>Online Shoping App</h3>
+              <p class="light-text">
+                The app Connects you to the talented people around the
+                world.Download it from play store.
+              </p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+    <!-------------------------Contact-->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>pparth8108@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>7878787565</p>
+            <div class="social-icons">
+              <a href="https://www.instagram.com/_paartth___/?__pwa=1#"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://www.instagram.com/_paartth___/?__pwa=1#"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://www.instagram.com/_paartth___/?__pwa=1#"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="https://github.com/ParthDevOp"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+            <a href="my-cv.pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input
+                type="text"
+                class="input"
+                name="Name"
+                placeholder="Your Name"
+                required
+              />
+              <input
+                type="email"
+                class="input"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+                class="input"
+              ></textarea>
+              <button type="submit" class="btn btn3">Submit</button>
+            </form>
+            <div id="popup-msg" class="popup-msg">
+              <p id="popup-text"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p class="light-text">
+          Copyright © Parth <i class="fa-solid fa-heart"></i>
+        </p>
+      </div>
+    </div>
+
+    <!---- JavaScript file ---->
+    <script src="script.js"></script>
+    
+  </body>
+</html>
